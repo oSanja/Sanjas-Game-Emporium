@@ -1,0 +1,131 @@
+html {
+    height: 100%;
+}
+
+.square {
+    height: 32%;
+    aspect-ratio: 1;
+    border-style: solid;
+    border-color: #611C35;
+    border-radius: 50%;
+
+}
+
+body {
+    margin: 2% 8%;
+    background: linear-gradient(90deg, #3494E6 0%, #EC6EAD 100% );
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#score, #time-left {
+    font-weight: 900;
+}
+
+#score, #time-left, h2 {
+    font-size: 35px;
+}
+
+.grid {
+    display: flex;
+    margin: auto;
+    height: 100%;
+    justify-content: center;
+    margin: 10px auto 0 auto;
+}
+
+.mole {
+    background-image: url("mole-in-hole.jpg");
+    background-size: cover;
+}
+
+h1 {
+
+    font-size: 4vw;
+}
+
+h2 {
+margin: 0;
+}
+
+main {
+    height: 60vh;
+}
+
+.button {
+    height: 100px;
+    width: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 1.5rem sans-serif;
+    cursor: pointer;
+    will-change: transform;
+    margin: 5% auto 0 auto;
+}
+
+
+.button::before,
+.button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  background-color: #611C35;
+  transition: all 250ms ease-in-out;
+}
+
+.button::before {
+  width: 2px;
+  height: 100px;
+  box-shadow: 298px 0 #611C35;
+}
+
+.button::after {
+  height: 2px;
+  width: 300px;
+  box-shadow: 0 98px #611C35;
+}
+
+.button:hover::before {
+  left: -10px;
+  box-shadow: 318px 0 #611C35;
+}
+
+.button:hover::after {
+  top: -10px;
+  box-shadow: 0 118px #611C35;
+}
+
+
+@media screen and (max-width: 700px) {
+    .square {
+        height: 27vw;
+    }
+
+    .row {
+        height: fit-content;
+    }
+
+    .grid {
+        height: fit-content;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    #score, #time-left, h2 {
+        font-size: 20px;
+    }
+
+}
+
+

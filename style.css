@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("assets/diamond-sunset.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+body {
+    margin: 8%;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+}
+
+.texts {
+    margin: 0 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 1em;
+}
+
+.desc {
+    font-size: 18px;
+}
+
+.desc span {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.disclamer {
+    font-size: 14px;
+}
+
+main {
+    margin: 20px 8% 0 8%;
+    padding: 20px;;
+    background-color: white;
+    border-radius: 1em;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.game {
+    border: 2px solid #eb6948;
+    border-radius: 1em;
+    width: 22.8%;
+    min-width: 200px;
+    aspect-ratio: 1;
+    transition: all 0.2s;
+}
+
+.game:hover {
+    transform: scale(1.05);
+    transition: all 0.2s;
+}
+
+.pig-game {
+    background-image: url("assets/piggame.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.number-guesser {
+    background-image: url("assets/numberguesser.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.memory {
+    background-image: url("assets/Memory.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.whack-a-mole {
+    background-image: url("assets/WAM.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

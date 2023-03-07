@@ -1,0 +1,31 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 630px;
+    width: 860px;    
+}
+
+body {
+    background: linear-gradient(45deg, #ffe4e4 0%, #ffdeca 30%, #ffd8d8 100% );
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+h1 {
+
+    color: rgb(70, 0, 41);
+    font-family: fantasy;
+    font-size: 50px;
+    
+}
+
+img {
+    border-radius: 10%;
+}

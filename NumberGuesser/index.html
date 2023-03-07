@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <header>
+      <div class="intro">
+        <h1>Number guesser</h1>
+        <p class="rules">Number between 1 and 20 is   randomly generated. Try and guess it!
+        (watch for hints did you go higher or lower with your guess)
+        </p>
+      </div>
+      <button class="btn up again">Start the game</button>
+    </header>
+    <main>
+      <section class="gen-number">
+        <div class="text-style">Generated number: </div>
+        <div class="number">?</div>
+      </section>
+      <section class="left">
+        <p class="message text-style">Start guessing...</p>
+        <input type="number" class="guess" />
+        <button class="btn up check">Check!</button>
+      </section>
+    </main>
+    <section class="scores">
+      <p class="label-score">Score: <span class="score">20</span></p>
+      <p class="label-highscore">
+        Highscore: <span class="highscore">0</span>
+      </p>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
